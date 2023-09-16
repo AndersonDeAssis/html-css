@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste hover</title>
+    <style>
+        /*Faz com que o houver seja aplicado ao item final no caso o paragrafo */
+        div:hover p{
+            color: brown;
+            display: block;
+            background-color: cadetblue;
+        }
+        /*Faz com que o que esta selecionado não apareça*/
+        div p{
+            display:none;
+        }
+        /*Faz com que o texto da div(Passe o mouse aqui também) tenha essa caracteristica*/
+        div:hover{
+            color: rgb(33, 199, 152);
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste hover</h1>
+        <p>Passe o mouse aqui</p>
+        <div>
+                Passe o mouse aqui também
+           <p>
+            Texto escondido...!!!
+           </p>
+        </div>
+    </main>
+</body>
+</html>

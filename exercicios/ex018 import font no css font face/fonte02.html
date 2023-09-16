@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'london';
+            src: url(fontes/Olondona.otf) format(opentype),
+                url(fontes/OldLondon.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'pirata';
+            src: url(fontes/PirataOne-Regular.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1 {
+            font-family: 'london', arial, verdana, sans-serif;
+            font-style: normal;
+        }
+
+        p {
+            font-family: 'pirata', arial, verdana, sans-serif;
+            font-style: normal;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Título</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem corrupti praesentium deleniti delectus
+        temporibus, adipisci, officiis maiores error quibusdam minus perferendis mollitia, id ut sed commodi amet
+        suscipit accusantium excepturi.
+    </p>
+</body>
+
+</html>

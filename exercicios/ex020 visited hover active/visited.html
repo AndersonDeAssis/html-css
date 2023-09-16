@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        a::after {
+            content: ' Este texto foi adicionado por pseudo element';
+            color: black;
+        }
+        a::before{content:'este é um [link]';
+        color: black;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            /*quando passa o mouse emcima*/
+            color: rgb(189, 45, 189);
+            text-decoration: underline;
+        }
+
+        /*quando ja foi visitado*/
+        a:visited {
+            color: brown;
+        }
+
+        /*quando clica*/
+        a:active {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Pseudo element</h1>
+        <ul>
+            <li><a href="https://github.com/" target="_blank" rel="external">GitHub</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank" rel="external">YouTUbe</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="external">Instagram</a></li>
+        </ul>
+        <p>
+            Existe os pseudo elemnets after e before
+        </p>
+    </main>
+</body>
+
+</html>
