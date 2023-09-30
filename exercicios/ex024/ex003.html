@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        iframe{
+            height: 400px;
+            width: 95vw;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolha um link</h1>
+    <ul>
+        <li><a href="ex001.html" target="frame">Primeira</a></li>
+        <li><a href="es002.html" target="frame">Segunda</a></li>
+        <li><a href="../ex023/tabela01.html" target="frame">Terceira</a></li>
+    </ul>
+    <p>Voce precisa que seu iframe tenha um NAME para você conseguir dar ao link o local onde ele sera aberto</p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cum explicabo in laudantium. Reiciendis aut recusandae eveniet corporis, optio voluptatum animi molestias explicabo excepturi amet dolorum labore distinctio ipsa praesentium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem fuga unde maxime omnis esse, quibusdam quo mollitia id officiis inventore eius, quisquam nulla dignissimos architecto illum cum reprehenderit sapiente exercitationem!
+    </p>
+    <iframe name="frame" srcdoc="<h1>Mensagem padrão</h1> <p>Essa mensagem não tem como retornar somente com a recarga da pagina</p><p>Escolha uma das tres opções acima:</p>" frameborder="0">Seu navegador nao é compativel</iframe>
+</body>
+</html>
