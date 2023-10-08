@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" autocomplete="on">
+        <div>
+            <label for="inome">Nome: </label> <input type="text" name="nome" id="inome" placeholder="ex:José" maxlength="20" required>
+        </div>
+        <div>
+           <label for="idata">Data simples: </label> <input type="date" name="data" id="idata" required>
+        </div>
+        <div>
+            <label for="imesCompleto">Data por extenso: </label><input type="month" name="mesCompleto" id="imesCompleto" required>
+        </div>
+        <div>
+            <label for="ihora">Horário: </label><input type="time" name="hora" id="ihora" required>
+        </div>
+        <div>
+            <label for="imedia">Média: </label> <input type="number" name="numero" id="inumero" step="0.1" min="0" max="10" required>
+        </div>
+
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+    </form>
+</body>
+</html>
